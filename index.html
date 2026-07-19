@@ -273,7 +273,7 @@ footer{
 requestAnimationFrame(()=>requestAnimationFrame(()=>document.documentElement.classList.add("motion")));
 
 /* ============================================================
-   CONFIG — sections & questions
+   CONFIG: sections & questions
    id = Airtable field name (must match the table exactly)
    ============================================================ */
 const SECTIONS = [
@@ -345,7 +345,7 @@ const SECTIONS = [
   q:[
     {id:"Pets", label:"Pets", hint:"Name + breed."},
     {id:"Children", label:"Children (as far as fans know)", type:"chips", opts:["Yes","No"]},
-    {id:"Children Details", label:"Anything you're comfortable sharing about them", type:"area", hint:"Only what chatters should know — e.g. how many, rough ages, or just that they exist. Skip anything private.", showIf:{id:"Children", equals:"Yes"}},
+    {id:"Children Details", label:"Anything you're comfortable sharing about them", type:"area", hint:"Only what chatters should know, like how many, rough ages, or just that they exist. Skip anything private.", showIf:{id:"Children", equals:"Yes"}},
     {id:"Hobbies", label:"Hobbies & how you spend free time", type:"area"},
     {id:"Dislikes / Avoid Topics", label:"Things you're not into, scared of, or dislike", type:"area", hint:"Chatters will avoid these topics."},
     {id:"Fav Food", label:"Favourite food"},
